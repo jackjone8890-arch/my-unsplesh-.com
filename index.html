@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>PicFinder - An Image Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/00806627b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="light-box">
+        <div class="wrapper">
+            <section>
+                <div class="photographer">
+                    <i class="fa-solid fa-camera"></i>
+                    <span></span>
+                </div>
+                <div class="buttons">
+                    <i class="fa-solid fa-download" style="color: #fff;"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </section>
+            <div class="preview-img">
+                <div class="img"><img src="" alt="preview-img"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="app-container">
+        <header>
+            <div class="heading-text">
+                <h1>PicFinder</h1>
+                <p>Search and Download any image within a Second from Both Pexels.com and Splash.com</p>
+            </div>
+            <div class="input-box">
+                <div class="apis">
+                    <select name="" id="api">
+                        <option value="pexels" selected>Pexels</option>
+                        <option value="splash">Splash</option>
+                    </select>
+                </div>
+                <input type="text" name="" id="searchInput" placeholder="Search images in Pexels.com" autocomplete="flase">
+                <i class="fa-solid fa-magnifying-glass searchBtn"></i>
+            </div>
+        </header>
+
+        <section class="gallery">
+            <ul class="images"></ul>
+
+            <button id="btn">Load More</button>
+        </section>
+    </div>
+</body>
+</html>
